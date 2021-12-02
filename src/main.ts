@@ -1,10 +1,14 @@
 import * as readline from "readline";
 import day12 from "./day1-2";
 import day11 from "./day1-1";
+import day21 from "./day2-1";
+import day22 from "./day2-2";
 
 const functionMap: Record<string, (test?: boolean)=> void>= {
     "1:1": day11,
-    "1:2": day12
+    "1:2": day12,
+    "2:1": day21,
+    "2:2": day22
 }
 
 const rl = readline.createInterface({input: process.stdin, output: process.stdout})
